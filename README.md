@@ -3,10 +3,12 @@
 This is a simple skeleton of a JSON-API that uses Express JS and Mongoose.
 
 ## Installation
+
 To get the server up and running:
-1. Pull the repository
-2. Run `npm install`
-3. Run `node ./bin/www`
+1. [Set up MongoDB](https://docs.mongodb.com/manual/installation/)
+2. Pull the repository
+3. Run `npm install`
+4. Run `node ./bin/www`
 
 To get an overview of the endpoints, you can import the included Postman file into Postman.
 
@@ -20,7 +22,7 @@ This project uses the following main dependencies:
 
 ----------
 
-## Payloads
+## Models
 
 For a more complete list of available endpoints and example inputs, please import the postman file.
 
