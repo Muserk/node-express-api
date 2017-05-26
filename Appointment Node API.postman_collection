@@ -1,0 +1,242 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Appointment Node API",
+		"_postman_id": "ed15a8b4-d291-ac2f-df8d-5b81bd200e5b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Appointment",
+			"description": "",
+			"item": [
+				{
+					"name": "CREATE Appointment",
+					"request": {
+						"url": "localhost:3000/appointment",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"startDate\": \"2017-05-25T06:20:21+00:00\",\n\t\"endDate\": \"2017-05-25T06:45:21+00:00\",\n\t\"patientId\": \"5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "READ Appointment",
+					"request": {
+						"url": "localhost:3000/appointment/5dc95e60-40a6-44c0-b450-79e52382c061",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Appointment",
+					"request": {
+						"url": "localhost:3000/appointment/5dc95e60-40a6-44c0-b450-79e52382c061",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"startDate\": \"2017-05-26T06:20:21+00:00\",\n\t\"endDate\": \"2017-05-26T06:45:21+00:00\",\n\t\"patientId\": \"5\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Appointment",
+					"request": {
+						"url": "localhost:3000/appointment/5dc95e60-40a6-44c0-b450-79e52382c061",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"description": "",
+			"item": [
+				{
+					"name": "CREATE Patient",
+					"request": {
+						"url": "localhost:3000/patient",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Gavin\",\n\t\"lastName\": \"Servai\",\n\t\"phoneNumber\": \"6045955324\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "READ Patient",
+					"request": {
+						"url": "localhost:3000/patient/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Patient",
+					"request": {
+						"url": "localhost:3000/patient/7b9ba8fc-3114-4682-99f9-150cebfa5ad8",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"GavinUpdatedz\",\n\t\"lastName\": \"Servai\",\n\t\"phoneNumber\": \"6045955324\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Patient",
+					"request": {
+						"url": "localhost:3000/patient/f4a728fc-1cf7-455a-ab33-937591a19ea1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"description": "",
+			"item": [
+				{
+					"name": "CREATE Service",
+					"request": {
+						"url": "localhost:3000/service",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Service1\",\n\t\"duration\": 24\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "READ Service",
+					"request": {
+						"url": "localhost:3000/service/8d461ead-e075-4114-b145-ac10be9550ab",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Service",
+					"request": {
+						"url": "localhost:3000/service/8d461ead-e075-4114-b145-ac10be9550ab",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Service1Modified\",\n\t\"duration\": 24\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Service",
+					"request": {
+						"url": "localhost:3000/service/3b4363f9-772f-45e8-b129-c727ffc2d9a6",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
